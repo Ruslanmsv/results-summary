@@ -1,3 +1,5 @@
+import ResultsSummaryComponent from "./components/ResultsSummary/ResultsSummaryComponent";
+
 export default function App() {
-  return <h1>Project Init</h1>;
+  return <ResultsSummaryComponent />;
 }
