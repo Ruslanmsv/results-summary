@@ -5,7 +5,12 @@ interface ResultItemProps {
   Icon?: React.FC;
 }
 
-export default function ResultItem({ title, value, color, Icon }: ResultItemProps) {
+export default function ResultItem({
+  title,
+  value,
+  color,
+  Icon,
+}: ResultItemProps) {
   // Tailwind workaround for creating dynamic classes
   // https://tailwindcss.com/docs/content-configuration#dynamic-class-names
   type ResultItemColorClasses = { [key: string]: { [key: string]: string } };
@@ -24,15 +29,15 @@ export default function ResultItem({ title, value, color, Icon }: ResultItemProp
       bg: "bg-green",
     },
     blue: {
-      text: "text-blue",
-      bg: "bg-blue",
+      text: "text-cobalt-blue",
+      bg: "bg-cobalt-blue",
     },
   };
 
   return (
-    <li className="mt-4 first:mt-6">
+    <li className="mt-4 first:mt-0">
       <div
-        className={`${classes[color].bg} flex flex-row items-center justify-start rounded-xl bg-item-gradient p-4`}
+        className={`${classes[color].bg} flex flex-row items-center justify-start rounded-xl bg-item-gradient p-4 text-sm lg:text-md`}
       >
         {Icon && <Icon />}
         <span className={`${classes[color].text} ml-3`}>{title}</span>

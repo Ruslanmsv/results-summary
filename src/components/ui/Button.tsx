@@ -6,7 +6,9 @@ interface ButtonProps {
 export default function Button({ children, className }: ButtonProps) {
   return (
     <button
-      className={`${className ?? ''} w-auto rounded-[128px] bg-dg-blue pt-4 pb-4 font-hanken text-md xl:hover:bg-gradient font-bold text-white`}
+      className={`${
+        className ?? ""
+      } w-auto rounded-[128px] bg-dg-blue pt-4 pb-4 font-hanken text-md font-bold text-white lg:hover:bg-gradient`}
     >
       {children}
     </button>
