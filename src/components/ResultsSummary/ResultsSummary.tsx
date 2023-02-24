@@ -8,7 +8,7 @@ import IconVisual from "../Icons/IconVisual";
 export default function ResultsSummary() {
   return (
     <div>
-      <h3 className="text-md lg:text-lg font-bold text-dg-blue">Summary</h3>
+      <h3 className="text-md font-bold text-dg-blue lg:text-lg">Summary</h3>
       <ul className="mt-6 lg:mt-7">
         <ResultItem
           Icon={IconReaction}
